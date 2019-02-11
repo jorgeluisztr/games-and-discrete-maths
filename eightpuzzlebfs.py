@@ -70,7 +70,7 @@ def success(board, expanded, mytime, myram):
     f.write("cost_of_path: " + str(len(board.path)) + "\n")
     f.write("nodes_expanded: " + str(expanded) + "\n")
     f.write("search_depth: " + str(board.depth) + "\n")
-    f.write("max_search_depth: " + str(board.depth) + "1" + "\n")
+    f.write("max_search_depth: " + str(board.depth + 1)  + "\n")
     f.write("running_time: " + str(mytime) + "\n")
     f.write("max_ram_usage: " + str(myram) + "\n")
     f.close()
